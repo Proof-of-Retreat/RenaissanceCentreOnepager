@@ -1,5 +1,4 @@
-const TELEGRAM_LINK = "https://t.me/+placeholder";
-const TELEGRAM_BOT_LINK = "https://t.me/placeholder_bot";
+const TELEGRAM_LINK = "https://t.me/proofofretreat/283";
 
 export default function Opportunity() {
   return (
@@ -21,24 +20,14 @@ export default function Opportunity() {
           together, and build what matters.&rdquo;
         </blockquote>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href={TELEGRAM_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-gold hover:bg-gold-hover text-dark font-semibold px-8 py-4 rounded-full text-lg transition-colors"
-          >
-            Join Us
-          </a>
-          <a
-            href={TELEGRAM_BOT_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block border-2 border-dark/20 hover:border-dark/40 text-dark font-semibold px-8 py-4 rounded-full text-lg transition-colors"
-          >
-            Telegram Bot
-          </a>
-        </div>
+        <a
+          href={TELEGRAM_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-gold hover:bg-gold-hover text-dark font-semibold px-8 py-4 rounded-full text-lg transition-colors"
+        >
+          Join Us
+        </a>
       </div>
     </section>
   );

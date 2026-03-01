@@ -1,38 +1,27 @@
-import ImagePlaceholder from "./ImagePlaceholder";
-
 const projects = [
   {
-    name: "Scenius",
-    description: "Daily progress-sharing tool that creates accountability and enables serendipitous collaboration across the builder network.",
+    name: "Cartographers",
+    description: "Scouting the countries of tomorrow. A guide for investors seeking opportunities in emerging nation-building projects like charter cities.",
+    link: "https://cartographers.world/",
+    image: "/images/cartographers.png",
   },
   {
-    name: "Pomodoro",
-    description: "Shared focus and productivity tool that lets builders work together in synchronized deep-work sessions.",
+    name: "Thou Art Popup City Research",
+    description: "Studying temporary, intentional gatherings that accelerate collaboration on frontier tech, science, and coordination systems.",
+    link: "https://thouartofficial.com/research/popupcities",
+    image: "/images/ThouArt.jpg",
   },
   {
-    name: "Zuwell",
-    description: "Wellness and wellbeing tool designed to help builders maintain sustainable work practices and mental health.",
+    name: "H1v3",
+    description: "A ticket-based runtime where AI agents collaborate as a team. Agents delegate, specialize, and solve problems together through structured work units.",
+    link: "https://github.com/cxrtisxl/h1v3",
+    image: "/images/h1v3.jpg",
   },
   {
-    name: "Juli",
-    description: "Project details coming soon. An emerging tool from the cohort addressing a key community need.",
-  },
-  {
-    name: "Transcripts",
-    description: "Meeting and conversation transcription tool that captures and preserves knowledge from community discussions.",
-  },
-  {
-    name: "Showcase",
-    description: "Demo and portfolio platform for builders to present their work and attract collaborators and supporters.",
-  },
-  {
-    name: "Villedge Tech",
-    description: "Community technology platform. Visit villedge.tech for more details.",
-    isEmbed: true,
-  },
-  {
-    name: "Popup Research",
-    description: "Coordination and governance research studying how pop-up cities and builder communities self-organize.",
+    name: "Jackie Chain",
+    description: "An animated series where Jackie Chain and his team of allies set out on a journey to find Blockfather, the mastermind behind the biggest crypto scams of the century.",
+    link: "https://jackiechain.world/",
+    image: "/images/jackiechain.jpg",
   },
 ];
 
@@ -48,29 +37,27 @@ export default function Projects() {
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <div
+            <a
               key={project.name}
-              className="bg-cream-alt rounded-xl overflow-hidden border border-dark/5"
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-cream-alt rounded-xl overflow-hidden border border-dark/5 hover:border-gold transition-colors block"
             >
-              {project.isEmbed ? (
-                <div className="aspect-video border-2 border-dashed border-dark/20 bg-dark/5 flex items-center justify-center">
-                  <span className="text-dark/40 text-sm text-center px-4">
-                    Villedge Tech: embedded webpage preview
-                  </span>
-                </div>
-              ) : (
-                <ImagePlaceholder
-                  label={`${project.name}: screenshot or icon`}
-                  aspect="video"
+              <div className="aspect-video overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="w-full h-full object-cover"
                 />
-              )}
+              </div>
               <div className="p-6">
                 <h3 className="font-heading text-xl mb-2">{project.name}</h3>
                 <p className="text-dark/70 leading-relaxed text-sm">
                   {project.description}
                 </p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

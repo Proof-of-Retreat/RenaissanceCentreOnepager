@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "Fund 10-15 high-signal builders for 12-24 months. Remove financial distraction. Let them do their best work.",
 };
 
-const TELEGRAM_LINK = "https://t.me/+placeholder";
+const TELEGRAM_LINK = "https://t.me/proofofretreat/283";
 
 export default function RootLayout({
   children,
