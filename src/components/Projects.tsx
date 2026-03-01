@@ -23,6 +23,18 @@ const projects = [
     link: "https://jackiechain.world/",
     image: "/images/jackiechain.jpg",
   },
+  {
+    name: "Hypermaps",
+    description: "The TCP/IP for places. A global point-of-interest data commons, shifting from proprietary data hoarding to open, shared geospatial information.",
+    link: "https://hypermaps.org/",
+    image: "/images/hypermaps.png",
+  },
+  {
+    name: "Innermost Life",
+    description: "A scroll-driven cinematic narrative experience, combining interactive storytelling with immersive visuals.",
+    link: "https://innermost-life.vercel.app/",
+    image: "/images/InnermostLife.png",
+  },
 ];
 
 export default function Projects() {

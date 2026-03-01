@@ -142,6 +142,26 @@ export default function Footer() {
                     Thou Art Research
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://hypermaps.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-cream transition-colors"
+                  >
+                    Hypermaps
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://innermost-life.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-cream transition-colors"
+                  >
+                    Innermost Life
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
