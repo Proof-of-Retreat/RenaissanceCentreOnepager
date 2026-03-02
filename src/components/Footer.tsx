@@ -7,7 +7,7 @@ export default function Footer() {
           <div>
             <img src="/images/footer_logo.png" alt="Renaissance Centre" className="h-12 mb-4" />
             <p className="text-cream/60 text-sm">
-              A new institution for a world in transition.
+              An open creative studio. Everything we build goes into the commons.
             </p>
           </div>
 

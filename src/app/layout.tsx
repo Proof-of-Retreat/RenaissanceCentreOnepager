@@ -16,9 +16,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Renaissance Centre: A New Institution for a World in Transition",
+  title: "Renaissance Centre: An Open Creative Studio",
   description:
-    "Fund 10-15 high-signal builders for 12-24 months. Remove financial distraction. Let them do their best work.",
+    "A studio of artists, engineers, researchers, and writers working on what they actually believe in, and building it in public.",
 };
 
 const TELEGRAM_LINK = "https://t.me/proofofretreat/283";
@@ -43,7 +43,7 @@ export default function RootLayout({
               rel="noopener noreferrer"
               className="bg-gold hover:bg-gold-hover text-dark font-semibold px-5 py-2 rounded-full text-sm transition-colors"
             >
-              Join Our Community
+              Join the Studio
             </a>
           </div>
         </nav>

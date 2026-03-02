@@ -1,36 +1,47 @@
+const categories = [
+  {
+    title: "Software",
+    description:
+      "AI tools, mapping infrastructure, community platforms , built the way we believe software should be built: open, thoughtful, and not optimised for your attention.",
+  },
+  {
+    title: "Writing",
+    description:
+      "Novels, comics, essays, research , written slowly, in public, shaped by the people reading along.",
+  },
+  {
+    title: "Art & Film",
+    description:
+      "A documentary crew is capturing everything. The conversations, the breakthroughs, the dead ends, the shared meals where ideas change shape. You\u2019ll see it as it happens.",
+  },
+  {
+    title: "Ideas",
+    description:
+      "Some of us are just reading, thinking, and writing about it. That\u2019s allowed here. The best things often start that way.",
+  },
+];
+
 export default function Thesis() {
   return (
     <section className="bg-cream py-24">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="font-heading italic text-4xl md:text-5xl text-center mb-16">
-          The Thesis
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="font-heading italic text-4xl md:text-5xl text-center mb-4">
+          What We&rsquo;re Making
         </h2>
+        <p className="text-center text-dark/60 text-lg mb-16">
+          Real projects. Right now.
+        </p>
 
-        <div className="space-y-10">
-          <p className="text-lg md:text-xl leading-relaxed text-dark/80">
-            Fund <strong>10-15 high-signal builders</strong> for{" "}
-            <strong>1-2 years</strong>. Remove financial distraction. Let them
-            collaborate openly in the network state ecosystem and produce
-            outsized results.
-          </p>
-
-          <blockquote className="border-l-4 border-gold pl-6 italic text-lg text-dark/70">
-            &ldquo;Think Bell Labs, not Y Combinator. Optimize for quality of
-            thinking, not quarterly returns.&rdquo;
-          </blockquote>
-
-          <p className="text-lg leading-relaxed text-dark/80">
-            One well-funded, openly collaborative group of 15 builders will
-            outperform 20 isolated startups where 19 fail and all the knowledge
-            disappears. Open collaboration compounds. Isolated competition
-            decays.
-          </p>
-
-          <blockquote className="border-l-4 border-gold pl-6 italic text-lg text-dark/70">
-            &ldquo;We don&rsquo;t need more accelerators. We need a place where
-            the best builders can think clearly, work together, and build what
-            matters.&rdquo;
-          </blockquote>
+        <div className="grid md:grid-cols-2 gap-8">
+          {categories.map((cat) => (
+            <div
+              key={cat.title}
+              className="bg-cream-alt rounded-xl p-8 border border-dark/5"
+            >
+              <h3 className="font-heading text-xl mb-3">{cat.title}</h3>
+              <p className="text-dark/70 leading-relaxed">{cat.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

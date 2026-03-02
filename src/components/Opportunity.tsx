@@ -3,22 +3,25 @@ const TELEGRAM_LINK = "https://t.me/proofofretreat/283";
 export default function Opportunity() {
   return (
     <section className="bg-cream-alt py-24">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="font-heading italic text-4xl md:text-5xl mb-8">
-          The Opportunity
-        </h2>
+      <div className="max-w-3xl mx-auto px-6 text-center">
+        <div className="space-y-8 text-lg md:text-xl leading-relaxed text-dark/80 mb-12">
+          <p>
+            We believe the next interesting things, the software worth
+            using, the stories worth reading, the ideas worth spreading,
+            will be made by people who were free enough to make them right.
+          </p>
 
-        <p className="text-lg md:text-xl text-dark/80 leading-relaxed mb-6">
-          The bottleneck isn&rsquo;t technology. It&rsquo;s coordination.
-          The builders exist. The ideas exist. What&rsquo;s missing is the
-          structure to bring them together and the runway to let them focus.
-        </p>
+          <p>We&rsquo;re trying to become those people.</p>
 
-        <blockquote className="border-l-4 border-gold pl-6 italic text-lg text-dark/70 text-left max-w-2xl mx-auto mb-12">
-          &ldquo;We are building a place for them to find each other. A place
-          where the best builders in the world can think clearly, work
-          together, and build what matters.&rdquo;
-        </blockquote>
+          <p>
+            We&rsquo;re doing it on a beach in Vietnam, with a film crew, in
+            public, with your help.
+          </p>
+
+          <p className="font-heading italic text-3xl md:text-4xl text-dark">
+            Come watch.
+          </p>
+        </div>
 
         <a
           href={TELEGRAM_LINK}
@@ -26,7 +29,7 @@ export default function Opportunity() {
           rel="noopener noreferrer"
           className="inline-block bg-gold hover:bg-gold-hover text-dark font-semibold px-8 py-4 rounded-full text-lg transition-colors"
         >
-          Join Us
+          Join the Studio
         </a>
       </div>
     </section>

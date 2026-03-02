@@ -1,43 +1,43 @@
-const problems = [
-  {
-    title: "Builders Forced to Chase Revenue",
-    description:
-      "The most talented builders spend more time fundraising and chasing revenue than doing their best work.",
-  },
-  {
-    title: "Building Without Signal",
-    description:
-      "Protocol developers build in isolation without knowing what real people actually want or need.",
-  },
-  {
-    title: "Nothing Gets Recycled",
-    description:
-      "When startups fail, the talent, tools, and hard-won knowledge disappear. Nothing is recovered or reused.",
-  },
-  {
-    title: "No Business Model for Connectors",
-    description:
-      "Educators, researchers, and community connectors create enormous value but have no sustainable way to fund their work.",
-  },
-];
-
 export default function Problem() {
   return (
     <section className="bg-cream-alt py-24">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="font-heading italic text-4xl md:text-5xl text-center mb-16">
-          The Problem
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          {problems.map((p) => (
-            <div
-              key={p.title}
-              className="bg-cream rounded-xl p-8 border border-dark/5"
-            >
-              <h3 className="font-heading text-xl mb-3">{p.title}</h3>
-              <p className="text-dark/70 leading-relaxed">{p.description}</p>
-            </div>
-          ))}
+      <div className="max-w-3xl mx-auto px-6">
+        <div className="space-y-8 text-lg md:text-xl leading-relaxed text-dark/80">
+          <p>
+            Most of the things you love were made by people who had just enough
+            freedom to make them.
+          </p>
+
+          <p>
+            The novel that changed how you see the world. The tool you use every
+            day. The song that felt like it was written for you. None of those
+            came from a product roadmap or a quarterly review. They came from
+            someone with enough space, enough time, and enough people around
+            them who cared.
+          </p>
+
+          <p>
+            That space is disappearing. The people capable of building the next
+            generation of things worth caring about are spending their best
+            hours on work that pays the bills, not work that matters.
+          </p>
+
+          <p className="font-heading italic text-2xl md:text-3xl text-dark">
+            We&rsquo;re trying to change that.
+          </p>
+
+          <p>
+            Renaissance Centre is a creative studio in Vietnam where a small
+            group of makers: engineers, writers, artists, researchers. We
+            live and work together, funded by people like you, making
+            things in public.
+          </p>
+
+          <p className="text-dark font-medium">
+            No investors. No clients. No algorithm to feed.
+            <br />
+            Just the work, and the people watching it get made.
+          </p>
         </div>
       </div>
     </section>

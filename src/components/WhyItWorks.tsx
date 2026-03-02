@@ -1,50 +1,40 @@
-const reasons = [
-  {
-    title: "Not Starting from Zero",
-    description: "The community, tools, and relationships already exist. This is about scaling what works.",
-  },
-  {
-    title: "Talent Recycling",
-    description: "When a project pivots, the people, code, and insights stay in the network. Nothing is wasted.",
-  },
-  {
-    title: "Built-in Accountability",
-    description: "Scenius creates daily visibility into progress. Funders and builders see real work, not pitch decks.",
-  },
-  {
-    title: "Scalable & Replicable",
-    description: "The model is designed to be studied and replicated. Fund one cohort, publish the playbook, inspire many.",
-  },
-  {
-    title: "Research Value",
-    description: "Every cohort generates publishable research on coordination, governance, and builder productivity.",
-  },
-];
-
 export default function WhyItWorks() {
   return (
     <section className="bg-cream-alt py-24">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-3xl mx-auto px-6">
         <h2 className="font-heading italic text-4xl md:text-5xl text-center mb-16">
-          Why It Works
+          Who We Are
         </h2>
-        <div className="space-y-6">
-          {reasons.map((reason, i) => (
-            <div
-              key={reason.title}
-              className="flex gap-4 items-start bg-cream rounded-xl p-6 border border-dark/5"
-            >
-              <span className="text-gold font-heading text-2xl leading-none mt-1">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <div>
-                <h3 className="font-heading text-lg mb-1">{reason.title}</h3>
-                <p className="text-dark/70 leading-relaxed text-sm">
-                  {reason.description}
-                </p>
-              </div>
-            </div>
-          ))}
+
+        <div className="space-y-8 text-lg md:text-xl leading-relaxed text-dark/80">
+          <p>
+            We&rsquo;ve spent years bouncing between the world&rsquo;s best
+            creative communities: experimental residencies in Montenegro,
+            Turkey, California, Switzerland, Thailand. We&rsquo;ve seen what
+            happens when smart, curious people with wildly different disciplines
+            end up in the same room with nowhere to be and nothing to prove.
+          </p>
+
+          <p className="font-heading italic text-2xl md:text-3xl text-dark">
+            Things get made that wouldn&rsquo;t have gotten made anywhere else.
+          </p>
+
+          <p>
+            We ran our first experiment, Proof of Retreat, on the
+            coast of Vietnam. Artists, AI researchers, psychologists, founders,
+            and filmmakers showed up. Projects launched. People didn&rsquo;t want
+            to leave.
+          </p>
+
+          <p className="text-dark font-medium">
+            Now we&rsquo;re building the permanent version.
+          </p>
+
+          <p>
+            Two hubs. Saigon and Mui N&eacute;. A small, rotating crew of
+            fellows. Funded by people who want to see what happens when you
+            actually give talented people the room to do their best work.
+          </p>
         </div>
       </div>
     </section>
